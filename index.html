@@ -8,6 +8,14 @@
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $ ( '#nav_menu'). slicknav( {prependTo: "#mobile_menu"});
+        } ) ;
+    </script>
 </head>
 
 <body>
@@ -17,6 +25,7 @@
     <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 
 </header>
+<nav id="mobile_menu"></nav>
 <ul id="nav_menu">
     <li><a class="current" href="index.html">Home</a></li>
     <li><a href="index.html">Speakers</a></li>
@@ -66,6 +75,7 @@
     </section>
     <aside>
         <h2><span class="sheading">Guest speakers</span></h2>
+        <div class="me">
         <h2><span class="normal">October</span><br><a href="speakers/toobin.html"><span
                 class="normala">Jeffrey Toobin</span></a></h2>
         <img alt="Image of Toobin" height="75" src="images/toobin75.jpg">
@@ -78,6 +88,7 @@
         <h2><span class="normal">February</span><br><a href="speakers/sampson.html"><span
                 class="normala">Scott Sampson</span></a></h2>
         <img alt="Image of Sampson" height="75" src="images/sampson75.jpg">
+        </div>
     </aside>
 </main>
 <footer>
