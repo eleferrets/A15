@@ -30,19 +30,23 @@ aside {
     padding-left: 20px;
     padding-bottom: 20px;
 }
+
 #nav_menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: relative;
 }
+
 #nav_menu::after {
     clear: left;
     display: block;
 }
+
 #nav_menu li {
     float: left;
 }
+
 ul li a {
     display: inline-block;
     width: 160px;
@@ -54,6 +58,7 @@ ul li a {
     color: white;
     font-weight: bold;
 }
+
 ul li ul {
     list-style-type: none;
     width: 100px;
@@ -62,16 +67,20 @@ ul li ul {
     position: fixed;
 
 }
+
 ul li ul li {
     float: none;
 }
-ul li:hover ul{
+
+ul li:hover ul {
     display: block;
     visibility: visible;
 }
+
 .current {
     color: yellow;
 }
+
 /* the styles for the header */
 header {
     border-bottom: 3px solid #931420;

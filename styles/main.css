@@ -24,14 +24,19 @@ section {
     padding-right: 2.0833%;
     padding-left: 2.0833%;
 }
+
 .me {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
 }
+
 /* hide the mobile menu*/
-#mobile_menu { display: none; }
-    /* display the mobile menu
+#mobile_menu {
+    display: none;
+}
+
+/* display the mobile menu
 #mobile_menu { display: block; }*/
 /* Phone portrait */
 @media only screen and (max-width: 479px) {
@@ -39,30 +44,42 @@ section {
         font-size: 90%;
     }
 }
+
 /* Tablet portrait */
 @media only screen and (max-width: 959px) {
     section h1 {
         font-size: 135%;
     }
+
     section h2, aside h2 {
         font-size: 120%;
     }
 }
+
 /* Phone landscape */
 @media only screen and (max-width: 767px) {
     header img {
         float: none;
     }
+
     header {
         text-align: center;
     }
+
     /* hide the nav menu, display ham menu*/
-    #nav_menu { display: none; }
-    #mobile_menu { display: block; }
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
     .slicknav_menu {
         background-color: #800000 !important;
     }
 }
+
 aside {
     width: 95.8334%;
     float: none;
@@ -70,21 +87,25 @@ aside {
     padding-right: 2.0833%;
     padding-bottom: 20px;
 }
+
 #nav_menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: relative;
 }
+
 #nav_menu::after {
     clear: left;
     display: block;
 }
+
 #nav_menu li {
     float: left;
     display: inline-block;
     width: 20%;
 }
+
 ul li a {
     display: inline-block;
     width: 180px;
@@ -97,6 +118,7 @@ ul li a {
     color: white;
     font-weight: bold;
 }
+
 ul li ul {
     list-style-type: none;
     width: 100px;
@@ -105,18 +127,22 @@ ul li ul {
     position: fixed;
 
 }
+
 ul li ul li {
     float: none;
 }
-ul li:hover ul{
+
+ul li:hover ul {
     display: block;
     visibility: visible;
     width: 100%;
     padding-bottom: 1em;
 }
+
 .current {
     color: yellow;
 }
+
 /* the styles for the header */
 header {
     border-bottom: 3px solid #931420;
@@ -218,6 +244,7 @@ section h2 {
     padding-top: .5em;
     padding-bottom: .25em;
 }
+
 section ul {
     list-style-type: circle;
 }
@@ -270,9 +297,11 @@ section li {
 .normala {
     font-size: 75%;
 }
+
 .pada {
     margin-top: 1.5em;
 }
+
 /* Changes the text to italic when the link is focused,
    or the mouse hovers over the link */
 a:focus, a:hover {
